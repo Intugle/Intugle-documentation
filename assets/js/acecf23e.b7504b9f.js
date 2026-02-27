@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocs_as_code_tutorial=globalThis.webpackChunkdocs_as_code_tutorial||[]).push([[903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/Intugle-documentation/blog","blogTitle":"Blog","authorsListPath":"/Intugle-documentation/blog/authors"}')}}]);

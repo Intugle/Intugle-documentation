@@ -13,8 +13,8 @@
       "calendar": "gregory",
       "path": "en",
       "translate": false,
-      "url": "https://intugle.github.io",
-      "baseUrl": "/Intugle-documentation/"
+      "url": "https://docs.intugle.ai",
+      "baseUrl": "/"
     }
   }
 }

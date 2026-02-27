@@ -1,11 +1,11 @@
 {
   "id": "intro",
   "title": "Tutorial Intro",
-  "description": "Let's discover Docusaurus in less than 5 minutes.",
+  "description": "Let's discover Intugle in less than 5 minutes.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/Intugle-documentation/docs/intro",
+  "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Tutorial - Basics",
-    "permalink": "/Intugle-documentation/docs/category/tutorial---basics"
+    "title": "FAQs",
+    "permalink": "/docs/category/faqs"
   }
 }

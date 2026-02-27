@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Intugle Documentation Portal',
+  tagline: 'Vibe Code with Intugle',
+  favicon: 'https://intugle.ai/intugle-icon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,17 +15,20 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://intugle.github.io/',
+  // url: 'https://intugle.github.io/',
+  url: 'https://docs.intugle.ai/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Intugle-documentation',
+  // baseUrl: '/Intugle-documentation/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'intugle', // Usually your GitHub org/user name.
   projectName: 'Intugle-documentation', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  // onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -75,24 +78,24 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Intugle',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Intugle Logo',
+        src: 'https://intugle.ai/intugle-icon.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'FAQ',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {to: '/user-manual', label: 'Blog', position: 'left'},
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -102,7 +105,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'FAQ',
               to: '/docs/intro',
             },
           ],
@@ -111,34 +114,34 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Slack',
+              href: 'https://slack.com',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com',
             },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            // {
+            //   label: 'X',
+            //   href: 'https://x.com/docusaurus',
+            // },
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Intugle',
+              to: 'https://intugle.ai',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/intugle',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Intugle Inc.`,
     },
     prism: {
       theme: prismThemes.github,

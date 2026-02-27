@@ -1,0 +1,23 @@
+{
+  "id": "FAQs/databricks",
+  "title": "Databricks Connection Requirements",
+  "description": "This document outlines the information and access required to connect your Databricks environment to our application.",
+  "source": "@site/docs/FAQs/databricks.md",
+  "sourceDirName": "FAQs",
+  "slug": "/FAQs/databricks",
+  "permalink": "/docs/FAQs/databricks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FAQs/databricks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "FAQs",
+    "permalink": "/docs/category/faqs"
+  }
+}

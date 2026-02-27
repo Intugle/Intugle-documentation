@@ -3,155 +3,107 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/Intugle-documentation/blog',
-    component: ComponentCreator('/Intugle-documentation/blog', 'e49'),
+    path: '/blog',
+    component: ComponentCreator('/blog', 'b2f'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/archive',
-    component: ComponentCreator('/Intugle-documentation/blog/archive', 'c5b'),
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '182'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/authors',
-    component: ComponentCreator('/Intugle-documentation/blog/authors', 'f3f'),
+    path: '/blog/authors',
+    component: ComponentCreator('/blog/authors', '0b7'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/Intugle-documentation/blog/authors/all-sebastien-lorber-articles', '3a4'),
+    path: '/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/authors/yangshun',
-    component: ComponentCreator('/Intugle-documentation/blog/authors/yangshun', 'a68'),
+    path: '/blog/authors/yangshun',
+    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/first-blog-post',
-    component: ComponentCreator('/Intugle-documentation/blog/first-blog-post', '79e'),
+    path: '/blog/first-blog-post',
+    component: ComponentCreator('/blog/first-blog-post', '89a'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/long-blog-post',
-    component: ComponentCreator('/Intugle-documentation/blog/long-blog-post', '938'),
+    path: '/blog/long-blog-post',
+    component: ComponentCreator('/blog/long-blog-post', '9ad'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/mdx-blog-post',
-    component: ComponentCreator('/Intugle-documentation/blog/mdx-blog-post', '126'),
+    path: '/blog/mdx-blog-post',
+    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/tags',
-    component: ComponentCreator('/Intugle-documentation/blog/tags', '2d7'),
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags', '287'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/tags/docusaurus',
-    component: ComponentCreator('/Intugle-documentation/blog/tags/docusaurus', 'e87'),
+    path: '/blog/tags/docusaurus',
+    component: ComponentCreator('/blog/tags/docusaurus', '704'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/tags/facebook',
-    component: ComponentCreator('/Intugle-documentation/blog/tags/facebook', '6f2'),
+    path: '/blog/tags/facebook',
+    component: ComponentCreator('/blog/tags/facebook', '858'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/tags/hello',
-    component: ComponentCreator('/Intugle-documentation/blog/tags/hello', '541'),
+    path: '/blog/tags/hello',
+    component: ComponentCreator('/blog/tags/hello', '299'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/tags/hola',
-    component: ComponentCreator('/Intugle-documentation/blog/tags/hola', '30a'),
+    path: '/blog/tags/hola',
+    component: ComponentCreator('/blog/tags/hola', '00d'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/blog/welcome',
-    component: ComponentCreator('/Intugle-documentation/blog/welcome', '929'),
+    path: '/blog/welcome',
+    component: ComponentCreator('/blog/welcome', 'd2b'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/markdown-page',
-    component: ComponentCreator('/Intugle-documentation/markdown-page', '09a'),
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '3d7'),
     exact: true
   },
   {
-    path: '/Intugle-documentation/docs',
-    component: ComponentCreator('/Intugle-documentation/docs', 'e6c'),
+    path: '/docs',
+    component: ComponentCreator('/docs', 'e80'),
     routes: [
       {
-        path: '/Intugle-documentation/docs',
-        component: ComponentCreator('/Intugle-documentation/docs', 'e27'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'e11'),
         routes: [
           {
-            path: '/Intugle-documentation/docs',
-            component: ComponentCreator('/Intugle-documentation/docs', 'd41'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'a9d'),
             routes: [
               {
-                path: '/Intugle-documentation/docs/category/tutorial---basics',
-                component: ComponentCreator('/Intugle-documentation/docs/category/tutorial---basics', '1e6'),
+                path: '/docs/category/faqs',
+                component: ComponentCreator('/docs/category/faqs', '418'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Intugle-documentation/docs/category/tutorial---extras',
-                component: ComponentCreator('/Intugle-documentation/docs/category/tutorial---extras', 'e56'),
+                path: '/docs/FAQs/databricks',
+                component: ComponentCreator('/docs/FAQs/databricks', '037'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Intugle-documentation/docs/intro',
-                component: ComponentCreator('/Intugle-documentation/docs/intro', 'f77'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/congratulations', '19b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/create-a-blog-post', 'e18'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/create-a-document', 'e37'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/create-a-page', '432'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/deploy-your-site', '548'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-basics/markdown-features', '4f3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-extras/manage-docs-versions', '4a1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/Intugle-documentation/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/Intugle-documentation/docs/tutorial-extras/translate-your-site', 'ce5'),
+                path: '/docs/intro',
+                component: ComponentCreator('/docs/intro', '61d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -162,8 +114,8 @@ export default [
     ]
   },
   {
-    path: '/Intugle-documentation/',
-    component: ComponentCreator('/Intugle-documentation/', '4be'),
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
     exact: true
   },
   {

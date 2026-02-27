@@ -4,9 +4,9 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
+  "title": "Intugle Documentation Portal",
+  "tagline": "Vibe Code with Intugle",
+  "favicon": "https://intugle.ai/intugle-icon.svg",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -28,11 +28,11 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://intugle.github.io",
-  "baseUrl": "/Intugle-documentation/",
+  "url": "https://docs.intugle.ai",
+  "baseUrl": "/",
   "organizationName": "intugle",
   "projectName": "Intugle-documentation",
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -77,27 +77,17 @@ export default {
       "disableSwitch": false
     },
     "navbar": {
-      "title": "My Site",
+      "title": "Intugle",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "Intugle Logo",
+        "src": "https://intugle.ai/intugle-icon.svg"
       },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Tutorial"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
-          "position": "right"
+          "label": "FAQ"
         }
       ],
       "hideOnScroll": false
@@ -109,7 +99,7 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
+              "label": "FAQ",
               "to": "/docs/intro"
             }
           ]
@@ -118,16 +108,12 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "Slack",
+              "href": "https://slack.com"
             },
             {
               "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
+              "href": "https://discordapp.com"
             }
           ]
         },
@@ -135,17 +121,17 @@ export default {
           "title": "More",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
+              "label": "Intugle",
+              "to": "https://intugle.ai"
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/intugle"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 Intugle Inc."
     },
     "prism": {
       "theme": {

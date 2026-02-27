@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_docs=globalThis.webpackChunkmy_docs||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/Intugle-documentation/blog","blogTitle":"Blog","authorsListPath":"/Intugle-documentation/blog/authors"}')}}]);

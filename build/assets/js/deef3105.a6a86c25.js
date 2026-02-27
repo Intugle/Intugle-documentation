@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocs_as_code_tutorial=globalThis.webpackChunkdocs_as_code_tutorial||[]).push([[2194],{1062(o){o.exports=JSON.parse('{"metadata":{"permalink":"/Intugle-documentation/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

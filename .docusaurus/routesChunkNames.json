@@ -1,0 +1,273 @@
+{
+  "/Intugle-documentation/blog-e49": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "deef3105"
+  },
+  "/Intugle-documentation/blog/archive-c5b": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "b72017db"
+  },
+  "/Intugle-documentation/blog/authors-f3f": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "182d85ba"
+  },
+  "/Intugle-documentation/blog/authors/all-sebastien-lorber-articles-3a4": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "0a2e6163"
+  },
+  "/Intugle-documentation/blog/authors/yangshun-a68": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "54d6803a"
+  },
+  "/Intugle-documentation/blog/first-blog-post-79e": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "e273c56f"
+  },
+  "/Intugle-documentation/blog/long-blog-post-938": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "73664a40"
+  },
+  "/Intugle-documentation/blog/mdx-blog-post-126": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "59362658"
+  },
+  "/Intugle-documentation/blog/tags-2d7": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "5649d4e0"
+  },
+  "/Intugle-documentation/blog/tags/docusaurus-e87": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "0132e9fd"
+  },
+  "/Intugle-documentation/blog/tags/facebook-6f2": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      }
+    ],
+    "__props": "449eb681"
+  },
+  "/Intugle-documentation/blog/tags/hello-541": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      }
+    ],
+    "__props": "42411332"
+  },
+  "/Intugle-documentation/blog/tags/hola-30a": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "629f90e7"
+  },
+  "/Intugle-documentation/blog/welcome-929": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "d9f32620"
+  },
+  "/Intugle-documentation/markdown-page-09a": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/Intugle-documentation/docs-e6c": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/Intugle-documentation/docs-e27": {
+    "__comp": "a7bd4aaa",
+    "__props": "4692a3b4"
+  },
+  "/Intugle-documentation/docs-d41": {
+    "__comp": "a94703ab"
+  },
+  "/Intugle-documentation/docs/category/tutorial---basics-1e6": {
+    "__comp": "14eb3368",
+    "__props": "a3d92bc1"
+  },
+  "/Intugle-documentation/docs/category/tutorial---extras-e56": {
+    "__comp": "14eb3368",
+    "__props": "092bde24"
+  },
+  "/Intugle-documentation/docs/intro-f77": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/congratulations-19b": {
+    "__comp": "17896441",
+    "content": "822bd8ab"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/create-a-blog-post-e18": {
+    "__comp": "17896441",
+    "content": "533a09ca"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/create-a-document-e37": {
+    "__comp": "17896441",
+    "content": "1e4232ab"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/create-a-page-432": {
+    "__comp": "17896441",
+    "content": "5c868d36"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/deploy-your-site-548": {
+    "__comp": "17896441",
+    "content": "f55d3e7a"
+  },
+  "/Intugle-documentation/docs/tutorial-basics/markdown-features-4f3": {
+    "__comp": "17896441",
+    "content": "18c41134"
+  },
+  "/Intugle-documentation/docs/tutorial-extras/manage-docs-versions-4a1": {
+    "__comp": "17896441",
+    "content": "dff1c289"
+  },
+  "/Intugle-documentation/docs/tutorial-extras/translate-your-site-ce5": {
+    "__comp": "17896441",
+    "content": "e44a2883"
+  },
+  "/Intugle-documentation/-4be": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

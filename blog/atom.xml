@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.intugle.ai/blog"/>
     <subtitle>Intugle Documentation Portal Blog</subtitle>
-    <icon>https://docs.intugle.ai/img/favicon.ico</icon>
+    <icon>https://docs.intugle.ai/https://intugle.ai/intugle-icon.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://docs.intugle.ai/blog/welcome</id>

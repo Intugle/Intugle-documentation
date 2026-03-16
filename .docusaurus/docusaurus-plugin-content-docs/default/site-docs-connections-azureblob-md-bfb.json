@@ -1,0 +1,28 @@
+{
+  "id": "Connections/azureblob",
+  "title": "Azure Blob Storage",
+  "description": "This document outlines the information required to connect to Azure Blob Storage using Access Key authentication.",
+  "source": "@site/docs/Connections/azureblob.md",
+  "sourceDirName": "Connections",
+  "slug": "/Connections/azureblob",
+  "permalink": "/Connections/azureblob",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Connections/azureblob.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "azureblob",
+    "title": "Azure Blob Storage",
+    "hide_table_of_contents": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Azure Data Lake Storage",
+    "permalink": "/Connections/adls"
+  },
+  "next": {
+    "title": "Google BigQuery",
+    "permalink": "/Connections/bigquery"
+  }
+}

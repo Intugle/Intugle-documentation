@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Intugle Documentation Portal",
-  "tagline": "Vibe Code with Intugle",
+  "tagline": "Vibe Coding Data products",
   "favicon": "https://intugle.ai/intugle-icon.svg",
   "future": {
     "v4": {
@@ -46,8 +46,9 @@ export default {
       "classic",
       {
         "docs": {
+          "routeBasePath": "/",
           "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
           "showReadingTime": true,
@@ -87,7 +88,12 @@ export default {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "FAQ"
+          "label": "Documentation"
+        },
+        {
+          "href": "https://github.com/intugle",
+          "label": "GitHub",
+          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -100,7 +106,7 @@ export default {
           "items": [
             {
               "label": "FAQ",
-              "to": "/docs/intro"
+              "to": "/docs/faqs"
             }
           ]
         },

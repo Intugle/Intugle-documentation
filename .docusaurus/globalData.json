@@ -1,28 +1,48 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
-          "mainDocId": "intro",
+          "path": "/",
+          "mainDocId": "Intro",
           "docs": [
             {
-              "id": "FAQs/databricks",
-              "path": "/docs/FAQs/databricks",
+              "id": "Connections/adls",
+              "path": "/Connections/adls",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "intro",
-              "path": "/docs/intro",
+              "id": "Connections/azureblob",
+              "path": "/Connections/azureblob",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/faqs",
-              "path": "/docs/category/faqs",
+              "id": "Connections/bigquery",
+              "path": "/Connections/bigquery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "databricks-engine/databricks",
+              "path": "/databricks-engine/databricks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FAQs/faqs",
+              "path": "/FAQs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Intro",
+              "path": "/Intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/databricks-engine",
+              "path": "/databricks-engine",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -30,8 +50,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/Intro",
+                "label": "Intro"
               }
             }
           }

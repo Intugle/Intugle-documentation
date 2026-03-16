@@ -1,0 +1,24 @@
+{
+  "id": "Intro",
+  "title": "Architecture",
+  "description": "Alt text",
+  "source": "@site/docs/Intro.md",
+  "sourceDirName": ".",
+  "slug": "/Intro",
+  "permalink": "/Intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Databricks Engine",
+    "permalink": "/databricks-engine"
+  }
+}

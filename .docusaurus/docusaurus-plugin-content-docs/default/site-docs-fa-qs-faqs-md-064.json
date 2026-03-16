@@ -1,0 +1,30 @@
+{
+  "id": "FAQs/faqs",
+  "title": "FAQs",
+  "description": "Note: Use the quick links on the left panel to jump directly to an issue.",
+  "source": "@site/docs/FAQs/faqs.md",
+  "sourceDirName": "FAQs",
+  "slug": "/FAQs/",
+  "permalink": "/FAQs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/FAQs/faqs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "faqs",
+    "title": "FAQs",
+    "sidebar_position": 5,
+    "hide_table_of_contents": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Databricks Connection Requirements",
+    "permalink": "/databricks-engine/databricks"
+  },
+  "next": {
+    "title": "Azure Data Lake Storage",
+    "permalink": "/Connections/adls"
+  }
+}

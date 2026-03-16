@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Intugle Documentation Portal',
-  tagline: 'Vibe Code with Intugle',
+  tagline: 'Vibe Coding Data products',
   favicon: 'https://intugle.ai/intugle-icon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -43,11 +43,12 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -88,14 +89,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'FAQ',
+          label: 'Documentation',
         },
-        // {to: '/user-manual', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        // { to: '/docs/user-guide', label: 'User Guide', position: 'left' },
+        {
+          href: 'https://github.com/intugle',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -106,7 +107,7 @@ const config: Config = {
           items: [
             {
               label: 'FAQ',
-              to: '/docs/intro',
+              to: '/docs/faqs',
             },
           ],
         },

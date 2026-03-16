@@ -1,0 +1,24 @@
+{
+  "id": "databricks-engine/databricks",
+  "title": "Databricks Connection Requirements",
+  "description": "This document outlines the information and access required to connect your Databricks environment to our application.",
+  "source": "@site/docs/databricks-engine/databricks.md",
+  "sourceDirName": "databricks-engine",
+  "slug": "/databricks-engine/databricks",
+  "permalink": "/databricks-engine/databricks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://githu``b.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/databricks-engine/databricks.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Databricks Engine",
+    "permalink": "/databricks-engine"
+  },
+  "next": {
+    "title": "FAQs",
+    "permalink": "/FAQs/"
+  }
+}

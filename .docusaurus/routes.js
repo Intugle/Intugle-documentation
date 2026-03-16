@@ -78,32 +78,61 @@ export default [
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', 'e80'),
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
+    exact: true
+  },
+  {
+    path: '/',
+    component: ComponentCreator('/', '731'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'e11'),
+        path: '/',
+        component: ComponentCreator('/', '4ef'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', 'a9d'),
+            path: '/',
+            component: ComponentCreator('/', 'a6f'),
             routes: [
               {
-                path: '/docs/category/faqs',
-                component: ComponentCreator('/docs/category/faqs', '418'),
+                path: '/Connections/adls',
+                component: ComponentCreator('/Connections/adls', 'e13'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/FAQs/databricks',
-                component: ComponentCreator('/docs/FAQs/databricks', '037'),
+                path: '/Connections/azureblob',
+                component: ComponentCreator('/Connections/azureblob', '91f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/Connections/bigquery',
+                component: ComponentCreator('/Connections/bigquery', '044'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/databricks-engine',
+                component: ComponentCreator('/databricks-engine', '793'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/databricks-engine/databricks',
+                component: ComponentCreator('/databricks-engine/databricks', 'a92'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/FAQs/',
+                component: ComponentCreator('/FAQs/', '562'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/Intro',
+                component: ComponentCreator('/Intro', '9d9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -112,11 +141,6 @@ export default [
         ]
       }
     ]
-  },
-  {
-    path: '/',
-    component: ComponentCreator('/', 'e5f'),
-    exact: true
   },
   {
     path: '*',

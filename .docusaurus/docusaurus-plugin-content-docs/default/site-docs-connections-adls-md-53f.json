@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "FAQs",
-    "permalink": "/FAQs/"
+    "title": "Google BigQuery Connection Requirements",
+    "permalink": "/FAQs/bigquery"
   },
   "next": {
     "title": "Azure Blob Storage",

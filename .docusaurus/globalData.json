@@ -31,6 +31,21 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "FAQs/adls",
+              "path": "/FAQs/adls",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FAQs/azureblob",
+              "path": "/FAQs/azureblob",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FAQs/bigquery",
+              "path": "/FAQs/bigquery",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "FAQs/faqs",
               "path": "/FAQs/",
               "sidebar": "tutorialSidebar"

@@ -24,7 +24,7 @@
     "permalink": "/databricks-engine/databricks"
   },
   "next": {
-    "title": "Azure Data Lake Storage",
-    "permalink": "/Connections/adls"
+    "title": "Azure Data Lake Storage Gen2 Connection Requirements",
+    "permalink": "/FAQs/adls"
   }
 }

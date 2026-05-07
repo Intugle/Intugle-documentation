@@ -1,0 +1,9 @@
+{
+  "label": "Advanced",
+  "position": 10,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Advanced technical documentation including architecture, connections, and troubleshooting."
+  }
+}

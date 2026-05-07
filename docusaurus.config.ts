@@ -54,7 +54,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'https://intugle.ai/intugle-icon.svg',
+    image: 'img/intugle-social-card.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },

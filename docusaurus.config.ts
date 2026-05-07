@@ -53,7 +53,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'https://intugle.ai/intugle-icon.svg',
     colorMode: {
       respectPrefersColorScheme: true,
     },

@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'FAQs',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         Frequently Asked Questions about Intugle
@@ -21,22 +21,13 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'User Manual',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         User Manual for Intugle
       </>
     ),
   },
-  // {
-  //   title: 'User Manual',
-  //   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-  //   description: (
-  //     <>
-  //       User Manual for Intugle
-  //     </>
-  //   ),
-  // },
 ];
 
 function Feature({ title, Svg, description }: FeatureItem) {

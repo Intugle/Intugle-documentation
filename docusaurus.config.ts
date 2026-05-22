@@ -31,8 +31,8 @@ const config: Config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/intugle/Intugle-documentation/tree/main/',
+          // editUrl:
+//  'https://github.com/intugle/Intugle-documentation/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -40,8 +40,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/intugle/Intugle-documentation/tree/main/',
+          // editUrl:'https://github.com/intugle/Intugle-documentation/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',

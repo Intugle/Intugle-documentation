@@ -32,10 +32,10 @@ Using SSH:
 USE_SSH=true yarn deploy
 ```
 
-Not using SSH:
+## Post Deployment
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+After deployment, the DNS mapping often gets reset. Do the following:
+- Go to Intugle github account
+- select Intugle-Documentation repo
+- Go to Settings -> Code and automation -> Pages
+- 'Custom domain' should be cleared. Enter 'docs.intugle.ai' and click Save. Wait for it to effect.

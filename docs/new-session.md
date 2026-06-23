@@ -60,7 +60,7 @@ All sessions are automatically saved and appear in the [Sessions](./sessions) pa
 
 After the AI generates a response to your question, you'll see several options to provide feedback, request corrections, or cache the response for faster future access.
 
-![Response Feedback and Fix Me](/img/response-feedback-fixme.png)
+![Response Feedback and Fix Me](/img/manual/response-feedback-fixme.png)
 
 ### Response Actions Bar
 

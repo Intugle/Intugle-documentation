@@ -58,7 +58,7 @@ To import a workspace:
    ![Import Menu](./import/2_import_workspace_menu.png)
 2. Upload the exported workspace ZIP file.
    ![Upload Menu](./import/3_after_upload_import_menu.png)
-3. Choose the appropriate environment option for Vector Collections.
+3. Vector Collection import options.
    ![Vector Collection Options](./import/3_after_upload_import_menu_vc_optoins.png)
 
    **Vector Collections: Recreate vs. Copy**

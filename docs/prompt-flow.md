@@ -125,7 +125,7 @@ Each agent is a specialist that handles a specific type of task:
 
 Few-Shots are **example question-and-answer pairs** that teach the AI how to handle specific types of queries for your business.
 
-![Few-Shots Management](/img/few-shots-management.png)
+![Few-Shots Management](/img/manual/few-shots-management.png)
 
 ### Why Few-Shots Matter
 
@@ -171,7 +171,7 @@ Each card shows:
 
 The Concepts tab (formerly Analytics Catalog) is a library of **business concepts and metric definitions** that the AI references when answering questions.
 
-![Analytics Concepts](/img/analytics-concepts.png)
+![Analytics Concepts](/img/manual/analytics-concepts.png)
 
 ### What is a Concept?
 
@@ -183,9 +183,9 @@ A **concept** is a business term with a defined meaning. For example:
 | **Net Revenue Retention** | "Revenue from existing customers this period / revenue from same customers last period × 100" |
 | **Top Products** | "Products ranked by total order value, excluding returns and refunds" |
 
-### Why the Catalog Matters
+### Why Concepts Matter
 
-Without catalog entries, asking "What's our churn rate?" might give inconsistent results because the AI doesn't know YOUR specific definition. With a catalog entry, it always uses your formula.
+Without concepts, asking "What's our churn rate?" might give inconsistent results because the AI doesn't know YOUR specific definition. With a concept, it always uses your formula.
 
 ### Top-Right Actions
 
@@ -210,7 +210,7 @@ Without catalog entries, asking "What's our churn rate?" might give inconsistent
 
 The Metadata tab provides a **tabular view** of all your data tables, columns, relationships, and descriptions. It now includes the **Use Case Summary** feature for documenting your data context.
 
-![Metadata Management](/img/metadata-management.png)
+![Metadata Management](/img/manual/metadata-management.png)
 
 ### Page Header Summary
 
@@ -284,7 +284,7 @@ Click **Commit Changes** (red button) after editing — changes are NOT saved au
 
 The Cache feature stores previously asked questions and their responses for faster retrieval.
 
-![Cache Management](/img/cache-management.png)
+![Cache Management](/img/manual/cache-management.png)
 
 ### How Cache Works
 
@@ -318,7 +318,7 @@ The Cache feature stores previously asked questions and their responses for fast
 
 The Memory tab contains **Universal Instructions** - global instructions that apply to all AI interactions for your subscription.
 
-![Memory - Universal Instructions](/img/memory-universal-instructions.png)
+![Memory - Universal Instructions](/img/manual/memory-universal-instructions.png)
 
 
 
@@ -364,7 +364,7 @@ The Jobs tab will allow you to manage scheduled and batch processing jobs. This 
 
 Observability provides comprehensive monitoring and analytics for all AI agent interactions.
 
-![Observability](/img/observability.png)
+![Observability](/img/manual/observability.png)
 
 ### Overview
 

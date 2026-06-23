@@ -220,7 +220,7 @@ Click **Save Connection** to save your configuration.
 
 ## Step 5: Generate the Semantic Data Graph
 
-After saving your connection, navigate to the **Agents Service** page (third icon in the left sidebar) to generate your Semantic Data Graph.
+After saving your connection, navigate to the **Prompt Flow / Agents** page (gear icon in the left sidebar) to generate your Semantic Data Graph.
 
 ### What is the Semantic Data Graph?
 

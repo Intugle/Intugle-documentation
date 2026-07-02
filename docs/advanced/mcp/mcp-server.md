@@ -13,9 +13,15 @@ This guide shows how to connect MCP clients (Claude Desktop, Cursor, etc.) to In
 2. Open **Settings** or **Deploy Wizard**
 3. Copy the **MCP URL** and **API Key**
 
-:::info Screenshot Needed
-**mcp-config-panel.png** - Deploy Wizard showing MCP URL and API Key fields
-:::
+![MCP Configuration Panel](./images/mcp-config-panel.png)
+
+The MCP Configuration panel shows:
+- **MCP URL**: Your endpoint (e.g., `https://dev.intugle.ai/mcp`)
+- **API Key**: Your JWT token (masked, with copy button)
+- **Expiration**: Token expiry date
+- **Authentication**: Required `Authorization: Bearer <api-key>` header
+- **Optional Headers**: `x-session-id` and `x-extra-params`
+- **MCP Client Configuration**: Ready-to-use JSON config for Claude Desktop
 
 ## Client Setup
 

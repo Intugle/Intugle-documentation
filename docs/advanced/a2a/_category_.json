@@ -1,0 +1,10 @@
+{
+  "label": "A2A (Agent-to-Agent)",
+  "position": 7,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Agent-to-Agent protocol for enabling external AI agents to communicate with Intugle.",
+    "slug": "/a2a"
+  }
+}

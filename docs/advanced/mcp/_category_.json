@@ -1,0 +1,10 @@
+{
+  "label": "MCP (Model Context Protocol)",
+  "position": 6,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Model Context Protocol integration for connecting Intugle with external AI tools and services.",
+    "slug": "/mcp"
+  }
+}

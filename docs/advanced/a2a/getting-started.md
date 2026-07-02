@@ -13,9 +13,15 @@ This guide shows how to integrate your application with Intugle using the A2A pr
 2. Open **Settings** → **A2A Connection Info**
 3. Copy the **A2A URL** and **API Key**
 
-:::info Screenshot Needed
-**a2a-connection-info.png** - ChatApp settings showing A2A URL and API Key
-:::
+![A2A Configuration Panel](./images/a2a-config-panel.png)
+
+The A2A Configuration panel shows:
+- **A2A URL**: Your endpoint (e.g., `https://dev.intugle.ai/a2a`)
+- **API Key**: Your JWT token (masked, with copy button)
+- **Expiration**: Token expiry date
+- **Authentication**: Required `Authorization: Bearer <api-key>` header
+- **Agent Card (Discovery)**: `GET` endpoint at `/.well-known/agent-card.json`
+- **JSON-RPC Endpoint**: `POST` endpoint with `Content-Type: application/json`
 
 ## Quick Example
 

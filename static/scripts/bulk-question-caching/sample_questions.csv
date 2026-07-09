@@ -1,0 +1,7 @@
+question,cache_type
+What is the total revenue from sales in the last month?,full
+Show me the top 10 best selling items by total amount,partial
+What is the average order value by customer segment?,full
+Which payment method generates the highest revenue?,partial
+How many customers joined the loyalty program each month?,full
+What are the peak hours for sales?,partial

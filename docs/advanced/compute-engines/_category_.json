@@ -1,0 +1,9 @@
+{
+  "label": "Compute Engines",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Configure compute engine connections",
+    "slug": "/compute-engines"
+  }
+}

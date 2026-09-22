@@ -336,25 +336,17 @@ Show me total sales by product category as a bar chart
 
 The AI will generate a chart showing sales breakdown by category.
 
-### 7.2 Pin the Chart to a Dashboard
+### 7.2 Pin the Chart and Create a Dashboard
 
-Find the **Pin** button on the chart header and click it.
+Hover over the chart header and select **Pin**. In the **Pin to dashboard** menu, select **New dashboard**, enter a descriptive name, and select **Create & Pin**.
 
 ![Pin button on chart](/img/manual/dashboard-pin-button.png)
 
-### 7.3 Create a New Dashboard
+### 7.3 Add More Charts
 
-If no dashboards exist, you'll see "No dashboards yet". Click **New dashboard**.
+To add another chart or table, select **Pin** on that result and choose the existing dashboard from the menu.
 
-![New dashboard dialog](/img/manual/dashboard-new-dashboard-dialog.png)
-
-### 7.4 Name Your Dashboard
-
-Enter a descriptive name for your dashboard (e.g., "Sales Analytics Dashboard") and click **Create & Pin**.
-
-![Dashboard name entered](/img/manual/dashboard-name-entered.png)
-
-### 7.5 View Your Dashboard
+### 7.4 View Your Dashboard
 
 Navigate to **Homepage → Deployed Apps → Dashboards** to see your new dashboard.
 
@@ -370,6 +362,8 @@ Click the dashboard to open it:
 | **Dashboard name** | Title of the dashboard |
 | **View / Edit** | Toggle between view and edit modes |
 | **Widgets** | Pinned charts and tables |
+
+For the complete workflow and current interface screenshots, see [Dashboards on the Homepage](./homepage#4c-dashboards).
 
 ---
 

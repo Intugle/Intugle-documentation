@@ -270,7 +270,38 @@ Each ChatApp card displays:
 
 ![Dashboards tab](/img/manual/01_home_dashboards.png)
 
-Each dashboard card shows a **thumbnail preview** of its layout, its name, and the number of widgets. Click a card to open the dashboard in full view.
+Dashboards collect charts and tables from your AI sessions in one place. Pin a result while you are reviewing a response, then find the dashboard in **Homepage → Deployed Apps → Dashboards**.
+
+#### Create a Dashboard From a Chart
+
+1. Ask a question that returns a chart or table, such as `Show inventory levels by product as a bar chart`.
+2. Hover over the chart header and select **Pin**. The button changes to **Pinned** after the chart is added to a dashboard.
+
+![A chart with the Pin action](/img/manual/dashboard-pin-menu-empty-current.png)
+
+3. In the **Pin to dashboard** menu, select **New dashboard**.
+4. Enter a clear dashboard name, then select **Create & Pin**. This creates the dashboard and adds the current chart as its first widget.
+
+![Name a new dashboard and create it](/img/manual/dashboard-create-and-pin-current.png)
+
+#### Add More Charts to an Existing Dashboard
+
+1. On another chart or table in a session, hover over its header and select **Pin**.
+2. Select the dashboard name from the **Pin to dashboard** menu. The chart is added immediately.
+
+![Select an existing dashboard from the Pin to dashboard menu](/img/manual/dashboard-pin-existing-current.png)
+
+#### Find and Open a Dashboard
+
+1. Return to the **Homepage**.
+2. Select **Deployed Apps**, then select the **Dashboards** filter.
+3. Select a dashboard card to open it. The card shows its name and widget count.
+
+![Dashboard card in the Dashboards filter](/img/manual/dashboard-list-current.png)
+
+When a dashboard is open, use **View** to review its widgets or **Edit** to arrange them. You can also open it immediately after creation from the dashboard tab that Intugle adds to your workspace.
+
+![A dashboard with pinned chart widgets](/img/manual/dashboard-created-current.png)
 
 ---
 

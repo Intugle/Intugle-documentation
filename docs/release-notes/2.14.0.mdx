@@ -1,0 +1,91 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.14.0 Release Notes
+
+**Date:** 2026-10-06  
+**Environment:** Intugle Staging  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- oauthlib pinned to >= 4.0.0.
+- Seed-skill metadata and workspace initialization.
+- Memory import/export endpoints.
+- effective-user-id refactor.
+- Jobhandler client bumps.
+
+### UI
+
+- Skills history panel, markdown editor, and sync dialog.
+- Workspace import/export of memory.
+- effective-user-id refactor.
+- User config and pagination improvements.
+- Skills management UI with history, markdown editor, and sync.
+
+### Agent v2
+
+- Security dependency fixes (mako, multidict, oauthlib, urllib3, pyjwt, gitpython).
+- mem0 memory enhancements (caching, TypeSafeClassifier, PII detection).
+- Per-subscription skill toggles.
+- DDL and universal instruction injection.
+
+### Jobhandler Async
+
+- nltk CVE-2026-81726 fix.
+- Skill Sync feature.
+- jobhandler-client 0.2.19 bump.
+
+### AI Services
+
+- No changes in this release.
+
+### Scheduler
+
+- No changes in this release.
+
+### Platform Fixes
+
+- Memory import/export in workspace import/export.
+- Security dependency updates.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.13` | `3.27.13` | `f485473b` | `api` |
+| UI | `3.27.11` | `3.27.11` | `ce218a2f` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.28.0` | `4.28.0` | `140cc66e` | `chatai_mcp` |
+| Jobhandler Async | `4.27.7` | `4.27.7` | `57ce93ff` | `jobhandler-async` |
+| AI Services | `1.3.0` | `1.3.0` | `ab8fce7f` | `ai-services` |
+| Scheduler | `0.1.5` | `0.1.5` | `a7c79c2` | `scheduler` |
+
+### Developer / Ops notes
+
+- API: oauthlib >= 4.0.0 pin; seed-skill metadata and workspace initialization; memory import/export endpoints; effective-user-id refactor; jobhandler client bumps.
+- UI: Skills history panel, markdown editor, and sync dialog; workspace import/export of memory; effective-user-id refactor; user config + pagination.
+- Agent: Security dependency fixes (mako, multidict, oauthlib, urllib3, pyjwt, gitpython); mem0 memory enhancements (caching, TypeSafeClassifier, PII detection); per-subscription skill toggles; DDL & universal instruction injection.
+- Jobhandler: nltk CVE-2026-81726 fix; Skill Sync feature; jobhandler-client 0.2.19 bump.
+
+### Breaking changes
+
+- API: oauthlib pinned to >= 4.0.0.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

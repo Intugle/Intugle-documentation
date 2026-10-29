@@ -61,7 +61,8 @@ const config: Config = {
       title: 'Intugle',
       logo: {
         alt: 'Intugle Logo',
-        src: 'https://intugle.ai/intugle-icon.svg',
+        src: 'img/intugle-logo.svg',
+        srcDark: 'img/intugle-logo-dark.svg',
       },
       items: [
         {
@@ -69,6 +70,12 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'doc',
+          docId: 'release-notes/index',
+          position: 'left',
+          label: 'Release Notes',
         },
         {
           href: 'https://github.com/intugle',

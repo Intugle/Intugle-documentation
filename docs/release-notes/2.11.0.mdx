@@ -1,0 +1,100 @@
+---
+sidebar_position: 5
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.11.0 Release Notes
+
+**Date:** 2026-09-25  
+**Environment:** Intugle Staging  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- Memory (vector memory for chatapp) with DB migrations.
+- Context graph and graph-RAG search.
+- Agent CRUD, tools, and skills endpoints.
+- Graceful shutdown and health endpoints.
+- Datadog logger v2 migration.
+- Seed skills and workspace initialization.
+- Memory import/export.
+- effective-user-id refactor.
+
+### UI
+
+- Memory page and deploy-wizard integration.
+- Deploy-wizard semantic diff and changes review.
+- DloAgentChat and agent builder.
+- Context graph search and node vectorization UI.
+- Skills management and sync UI.
+
+### Agent v2
+
+- Context graph agent (phase 1).
+- mem0 memory agent integration.
+- Metadata agent with dynamic tools.
+- FastAPI protocol server mounting.
+- Logger v2 / Datadog migration.
+- Graceful shutdown and health endpoints.
+
+### Jobhandler Async
+
+- Node vectorization pipeline.
+- Graceful shutdown with 1-hour drain.
+- Health and runtime probes.
+- Datadog logger v2 migration.
+
+### AI Services
+
+- No changes in this release.
+
+### Scheduler
+
+- Memory agent Prefect flow.
+- Memory cutoff date.
+
+### Platform Fixes
+
+- Multiple DB migrations for memory, app config, and context graph tables.
+- GET_TABLES tool renamed to GET_ASSETS in Text2SQLAgentTools.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.11` | `3.27.11` | `6aa3bba1` | `api` |
+| UI | `3.27.9` | `3.27.9` | `50d34ed9` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.27.1` | `4.27.1` | `38d0847c` | `chatai_mcp` |
+| Jobhandler Async | `4.27.6` | `4.27.6` | `caca0c6a` | `jobhandler-async` |
+| AI Services | `1.2.0` | `1.2.0` | `60b3df41` | `ai-services` |
+| Scheduler | `0.1.5` | `0.1.5` | `a7c79c2` | `scheduler` |
+
+### Developer / Ops notes
+
+- API: Memory (vector memory for chatapp) with DB migrations; context graph + graph-RAG search; agent CRUD/tools/skills endpoints; graceful shutdown; health endpoints; Datadog logger v2 migration; seed skills/workspace init; memory import/export; effective-user-id refactor.
+- UI: Memory page/deploy-wizard integration; deploy-wizard semantic diff/changes review; DloAgentChat + agent builder; context graph search & node vectorization; skills management.
+- Agent: Context graph agent (phase 1); mem0 memory agent integration; metadata agent with dynamic tools; FastAPI protocol server mounting; logger v2 / Datadog; graceful shutdown; health endpoints.
+- Jobhandler: Node vectorization pipeline; graceful shutdown with 1-hour drain; health/runtime probes; Datadog logger v2; filesystem manifest 0.1.1.
+- Scheduler: Memory agent Prefect flow; memory cutoff date.
+
+### Breaking changes
+
+- API: Multiple DB migrations for memory, app config, and context graph tables.
+- Agent: GET_TABLES tool renamed to GET_ASSETS in Text2SQLAgentTools.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

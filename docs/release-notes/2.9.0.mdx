@@ -1,0 +1,89 @@
+---
+sidebar_position: 9
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.9.0 Release Notes
+
+**Date:** 2026-09-04  
+**Environment:** Intugle Prod  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- Vector collection cleanup on alias names.
+- Subscriptions hard-delete support.
+- User creation fixed when user does not exist.
+- ADLS SAS backward compatibility for uploads.
+- User ID column in observability falls back to internal user ID when external user ID is missing for A2A/MCP.
+
+### UI
+
+- Render Complete tool toggle added for response agent.
+- Data analysis agent selected by default when deploying chatapps.
+- Evaluation Metrics job completion auto-refreshes observability table.
+- Connections page blocks upstream trigger when tables have zero columns or rows.
+- Recent runs indicators in Jobs page now reflect failures correctly.
+- Download Data issue fixed.
+
+### Agent v2
+
+- Configurable Render Complete tool for response agent.
+- Agent runtime uses query_id directly.
+- Context graph generation bug resolved.
+- Data View in Execute Query step stores results at the correct path.
+
+### Jobhandler Async
+
+- No changes in this release.
+
+### AI Services
+
+- No changes in this release.
+
+### Scheduler
+
+- No changes in this release.
+
+### Platform Fixes
+
+- No changes in this release.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.9-1` | `3.27.9-1` | `d184c931` | `api` |
+| UI | `3.27.7-2` | `3.27.7-2` | `0c574f3c` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.26.0-2` | `4.26.0-2` | `70285ed8` | `chatai_mcp` |
+| Jobhandler Async | `4.27.4` | `4.27.4` | `d7cbc889` | `jobhandler-async` |
+| AI Services | `1.1.0` | `1.1.0` | `164706b6` | `ai-services` |
+| Scheduler | `0.1.3` | `0.1.3` | `3c02d03` | `scheduler` |
+
+### Developer / Ops notes
+
+- API: ADLS SAS backward compatibility for uploads; user creation fix; end-flag support.
+- UI: End flag / Render Complete toggle; query_id parsing from resultId in socket API; agents selected by default in deploy wizard.
+- Agent: Configurable End tool for response completion; agent runtime uses query_id directly.
+- Scheduler: unchanged from 2.8.x.
+
+### Notes
+
+Formalized from existing release_highlights_2.9.0.txt.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

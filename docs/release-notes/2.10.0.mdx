@@ -1,0 +1,97 @@
+---
+sidebar_position: 6
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.10.0 Release Notes
+
+**Date:** 2026-09-15  
+**Environment:** Intugle Staging  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- ADLS SAS upload backward compatibility.
+- User creation fix.
+
+### UI
+
+- Removed PaddleOCR support from OCR configuration.
+- OCR configuration management.
+- Prompt flow unsaved-change detection improved.
+- Post-import workspace vector collection fixed.
+
+### Agent v2
+
+- OCR / LiteParse integration with Google DocumentAI.
+- Data-product attribute planning improvements.
+- Configurable tool-name change.
+- GenUI table metadata preservation.
+
+### Jobhandler Async
+
+- MCP view executor transpile-dialect fix.
+- Log syntax fix.
+
+### AI Services
+
+- Multi-provider OCR service refactor (Azure DI, AWS Textract, PaddleOCR, Google DocumentAI).
+- Vault-based OCR credentials.
+- appcore upgraded to 0.6.2.
+- Dimension-measure classifier removed.
+
+### Scheduler
+
+- Scheduler image unpinned in this staging revision.
+
+### Platform Fixes
+
+- PaddleOCR support removed from OCR providers.
+- AI Services appcore upgraded to 0.6.2.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.10` | `3.27.10` | `ba6f82a3` | `api` |
+| UI | `3.27.8` | `3.27.8` | `600d517b` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.27.0` | `4.27.0` | `64cddc85` | `chatai_mcp` |
+| Jobhandler Async | `4.27.5` | `4.27.5` | `0b89f9af` | `jobhandler-async` |
+| AI Services | `1.2.0` | `1.2.0` | `60b3df41` | `ai-services` |
+| Scheduler | `latest (unpinned)` | `latest (unpinned)` | `-` | `scheduler` |
+
+### Developer / Ops notes
+
+- API: Removed PaddleOCR support from OCR providers; ADLS SAS upload backward compatibility; user creation fix.
+- UI: Removed PaddleOCR support; OCR configuration management; prompt-flow unsaved-change detection fix; post-import vector collection fix.
+- Agent: OCR / LiteParse integration (Google DocumentAI); data-product attribute planning improvements; configurable tool-name change; Genui table metadata preservation.
+- Jobhandler: MCP view executor transpile-dialect fix; log syntax fix.
+- AI Services: Multi-provider OCR service refactor (Azure DI, AWS Textract, PaddleOCR, Google DocumentAI); vault-based OCR credentials; appcore 0.6.2 upgrade; dimension-measure classifier removal.
+- Scheduler: unpinned in this staging revision.
+
+### Breaking changes
+
+- PaddleOCR support removed from OCR providers.
+- AI Services appcore upgraded to 0.6.2 (vault + qdrant dependencies).
+- Dimension-measure classifier removed from AI Services.
+
+### Known issues
+
+- Scheduler image tag is 'latest' (unpinned) in staging revs 113-116.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

@@ -1,0 +1,121 @@
+---
+sidebar_position: 12
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.8.0 Release Notes
+
+**Date:** 2026-08-28  
+**Environment:** Intugle Prod  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- New EMR connector added.
+- MSSQL and EMR data-product creation validated.
+- Connection pool fix for agents reconnecting to Postgres.
+- Column IDs generated as UUIDs with backward compatibility.
+- Multiple table selection race condition fixed with distributed Redis lock.
+- Incremental pipeline no longer overwrites use-case summary.
+- Snapshot cleanup during new chatapp deployment.
+- Workspace import/export now supports moving deployed apps.
+- Deployed apps version control.
+- Import/export fixed for Databricks and EMR.
+- Import/export supports copying vector collections across environments.
+- Workspace agent preferences stabilized with reconciliation and distributed locking.
+- Metadata updates improved with optimistic UI and backend locking.
+- Cached questions search corrected.
+- Cached questions now store messages in memory for follow-up questions.
+- MCP header string payload issue corrected.
+
+### UI
+
+- Data Product GenUI with Plan, SQL, and Results tabs.
+- Attribute selection and join builder with aggregation and calculated fields.
+- Human-in-the-loop review system with clarification questions and resolved history.
+- Publish workflow with in-chat action and checkpointer memory injection.
+- Data product content persistence with save/edit API and deployment progress tracking.
+- Deploy wizard updated: chains and user guidance consolidated into Agent Scope, and Enable Data Products toggle added.
+- Deployed app mobile sidebar UI issue fixed.
+- Sync prompt UI improved with detailed status.
+- Memory tab version-control fixes.
+- Fix Me reset button added.
+- Dialog boxes block close on outside click and resized for calculated field and Run All.
+- UI revamp for few-shots, concepts, and cached questions with tags and usage metrics.
+- Unstructured document processing: processing pipeline, chat session, and document metadata UI.
+- Intugle Flow integration with customized UI and runtime environment support.
+
+### Agent v2
+
+- Data Product Agent supports creation and publish flows with new skills (data-product-creation, data-product-publish, calculated-field).
+- New synonym/variation retrieval for concepts and few-shots.
+- Vector collection creation updated for synonyms and variations.
+- Semantic search and shortlisted-row retrieval optimized.
+- Guidance-first SQL generation nudge.
+- Response agent nudged to use generative UI tools.
+- Configurable tool-call limit middleware.
+- Compaction bug fixed so conversational context is preserved.
+- Partial stages stored on query abort, disconnect, or timeout.
+- Abort, timeout, and disconnect messages are app-level configurable.
+- Blank or failed SQL attempts surfaced to the response agent.
+- Tracking of external user/session IDs and retrieved few-shot/concept IDs.
+- Cached semantic layer info read in deployed apps.
+- Unstructured Document Analysis agent enabled as sub-agent and tool.
+- Unstructured document processing: parsing, chunking, indexing, page summary, document summary, and tags.
+
+### Jobhandler Async
+
+- Usage metrics tracking job for columns, few-shots, and concepts.
+- Databricks data-product jobs show a loading indicator in recent runs.
+
+### AI Services
+
+- No changes in this release.
+
+### Scheduler
+
+- No changes in this release.
+
+### Platform Fixes
+
+- Observability table includes session ID, user ID, internal session ID, and internal user ID.
+- Vector collections copied across environments for workbench and deployed apps.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.7` | `3.27.7` | `3c0ad2ed` | `api` |
+| UI | `3.27.6` | `3.27.6` | `ffb9f293` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.25.0` | `4.25.0` | `2efce3ea` | `chatai_mcp` |
+| Jobhandler Async | `4.27.4` | `4.27.4` | `d7cbc889` | `jobhandler-async` |
+| AI Services | `1.1.0` | `1.1.0` | `164706b6` | `ai-services` |
+| Scheduler | `0.1.3` | `0.1.3` | `3c02d03` | `scheduler` |
+
+### Developer / Ops notes
+
+- Agent service A2A timeout fix and client-disconnect timeout reduction.
+- Redis persistence of aborted agent state and cancel-reason tracking.
+- API socket auth connection fix and reused source connection preservation in import/export.
+- Jobhandler reused source connection fix.
+
+### Notes
+
+This release serves as the post-2.8.0 boundary reference. See existing release highlights for detailed feature list.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

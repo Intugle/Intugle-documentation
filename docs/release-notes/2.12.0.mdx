@@ -1,0 +1,77 @@
+---
+sidebar_position: 4
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.12.0 Release Notes
+
+**Date:** 2026-09-25  
+**Environment:** Intugle Staging  
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+### API
+
+- No changes in this release.
+
+### UI
+
+- No changes in this release.
+
+### Agent v2
+
+- No changes in this release.
+
+### Jobhandler Async
+
+- No changes in this release.
+
+### AI Services
+
+- Health and readiness endpoints.
+- Graceful shutdown.
+- appcore v2 logging migration.
+
+### Scheduler
+
+- No changes in this release.
+
+### Platform Fixes
+
+- Improved service health and readiness monitoring.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.27.11` | `3.27.11` | `6aa3bba1` | `api` |
+| UI | `3.27.9` | `3.27.9` | `50d34ed9` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.27.1` | `4.27.1` | `38d0847c` | `chatai_mcp` |
+| Jobhandler Async | `4.27.6` | `4.27.6` | `caca0c6a` | `jobhandler-async` |
+| AI Services | `1.3.0` | `1.3.0` | `ab8fce7f` | `ai-services` |
+| Scheduler | `0.1.5` | `0.1.5` | `a7c79c2` | `scheduler` |
+
+### Developer / Ops notes
+
+- AI Services: Health/readiness endpoints, graceful shutdown, appcore v2 logging migration.
+- All other services unchanged from 2.11.0.
+
+### Breaking changes
+
+- AI Services: appcore v2 logging migration.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

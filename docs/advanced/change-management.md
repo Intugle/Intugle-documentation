@@ -6,7 +6,7 @@ sidebar_position: 4
 # Change Management of Workspaces
 
 
-What gets promoted when app is promoted (deployed) within the workspace — A full workspace. When you deploy an agent, the platform creates a separate copy of your context and semantic graph for that deployed app, and that copy is what travels with the workspace. Each time a workspace is imported into the NetApp production environment, a brand-new workspace is created on the prod side.
+What gets promoted when app is promoted (deployed) within the workspace — A full workspace. When you deploy an agent, the platform creates a separate copy of your context and semantic graph for that deployed app, and that copy is what travels with the workspace. Each time a workspace is imported into the production environment, a brand-new workspace is created on the prod side.
 
 The promotion is driven from the Intugle platform.
 

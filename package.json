@@ -55,6 +55,9 @@
     "minimatch": ">=11.0.1",
     "nanoid": ">=3.3.18",
     "path-to-regexp": ">=0.1.13",
+    "router": {
+      "path-to-regexp": "^8.0.0"
+    },
     "picomatch": ">=2.3.2",
     "postcss": ">=8.5.23",
     "postcss-selector-parser": ">=6.1.3",

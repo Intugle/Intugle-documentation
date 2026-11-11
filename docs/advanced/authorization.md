@@ -230,7 +230,7 @@ Allow access to everything, then block the `phones` table:
 
 #### Example 6: Deny Table + Allow Specific Column
 
-Block the `phones` table, but grant access to the `name` column:
+Block the `phones` table:
 
 ```json
 {
@@ -252,8 +252,8 @@ Block the `phones` table, but grant access to the `name` column:
 }
 ```
 
-**Result**: User can access only `phones.name`. All other `phones` columns are denied.  
-**Why**: `ALLOW phones.name` (specificity 3) is more specific than `DENY phones.*` (specificity 2).
+**Result**: All `phones` columns are denied.  
+**Why**: Within a group, `DENY` policies take precedence over `ALLOW` policies.
 
 ---
 

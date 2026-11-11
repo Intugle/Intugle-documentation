@@ -5,10 +5,11 @@ sidebar_position: 6
 
 # Authorization & Policy Evaluation
 
-Intugle's authorization system controls data access at two levels:
+Intugle's authorization system controls data access to tables and documents:
 
 - **Object-Level Security (OLS)** — which tables and columns a user can access
 - **Row-Level Security (RLS)** — which rows within an accessible table a user can see
+- **Document access** — which individual documents a user can access
 
 Access is managed through **policies** assigned to users and groups. This document explains how policies work and how Intugle resolves conflicts when multiple policies apply.
 
@@ -18,7 +19,7 @@ Access is managed through **policies** assigned to users and groups. This docume
 
 A policy is a JSON document containing one or more access rules (called **statements**). Each statement specifies:
 
-- **What resource** it applies to (tables, columns, or rows)
+- **What resource** it applies to (tables, columns, rows, or documents)
 - **Whether to allow or deny** access
 - **Optional conditions** (for row-level filtering)
 
@@ -44,10 +45,10 @@ Every policy follows this JSON structure:
 |-------|-------------|
 | `version` | Policy schema version |
 | `statements` | Array of access rules |
-| `category` | Policy category (`"dac"` = discretionary access control) |
+| `category` | Policy category (`"dac"` for tables and rows, `"document"` for documents) |
 | `effect` | `"allow"` or `"deny"` |
-| `resource` | Array of resource patterns |
-| `kind` | `"object"` for OLS, `"row"` for RLS |
+| `resource` | Array of resource patterns or document IDs |
+| `kind` | `"object"` for table/column or document access, `"row"` for RLS |
 | `condition` | Filter predicates (RLS only) |
 
 ### Policy Placement
@@ -540,7 +541,49 @@ WHERE brand_name = 'Samsung' OR country = 'US'
 
 ---
 
-## 4. How Policies Combine
+## 4. Document Access
+
+Document policies use `"category": "document"` and `"kind": "object"`. Each entry in `resource` is a document ID, such as `local:id-xxxx`. Use `"effect": "allow"` to allow access to that document or `"effect": "deny"` to deny access.
+
+### Allow a Document
+
+```json
+{
+  "version": "0.1.0",
+  "statements": [
+    {
+      "category": "document",
+      "effect": "allow",
+      "resource": ["local:id-xxxx"],
+      "kind": "object"
+    }
+  ]
+}
+```
+
+**Result**: The statement allows access to the document with ID `local:id-xxxx`.
+
+### Deny a Document
+
+```json
+{
+  "version": "0.1.0",
+  "statements": [
+    {
+      "category": "document",
+      "effect": "deny",
+      "resource": ["local:id-xxxx"],
+      "kind": "object"
+    }
+  ]
+}
+```
+
+**Result**: The statement denies access to the document with ID `local:id-xxxx`. Replace this example ID with the ID of the document you want to control.
+
+---
+
+## 5. How Policies Combine
 
 ### Direct vs. Group Policies
 
@@ -554,6 +597,8 @@ Intugle treats both sources equally. Neither has automatic precedence over the o
 1. **Collect all statements** from direct policies + all group policies
 2. **Apply OLS rules** for table/column access
 3. **Apply RLS rules** for row filtering
+
+Document statements target document IDs rather than table/column patterns or row filters.
 
 ### Group Membership = Union Access
 
@@ -577,7 +622,7 @@ This is called **union semantics** — joining a group should only add access, n
 
 ---
 
-## 5. Decision Table
+## 6. Decision Table
 
 This table shows the expected result for common policy combinations.
 
@@ -597,7 +642,7 @@ This table shows the expected result for common policy combinations.
 
 ---
 
-## 6. Design Principles
+## 7. Design Principles
 
 ### Why More Specific Always Wins
 
@@ -617,7 +662,7 @@ When any OLS policy exists, unmentioned tables/columns are denied by default. Th
 
 ---
 
-## 7. Quick Reference
+## 8. Quick Reference
 
 | Feature | Behavior |
 |---------|----------|
@@ -629,3 +674,4 @@ When any OLS policy exists, unmentioned tables/columns are denied by default. Th
 | **RLS default** | All rows visible if no policy |
 | **Group aggregation** | Additive (union) |
 | **Direct vs. group** | Treated equally |
+| **Document access** | `category: "document"`, `kind: "object"`, resource = document ID (for example, `local:id-xxxx`) |

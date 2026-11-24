@@ -85,7 +85,7 @@ The page has **nine tabs** in the left navigation panel:
 
 ## Tab 1 — Agent Configurator
 
-The Agent Configurator lets you customize the **system prompts** that control how each AI agent processes your questions.
+The Agent Configurator lets you customize the instructions and reusable capabilities that control how each AI agent processes your questions. Use **Prompts** to edit system prompts and **Skills** to manage reusable, file-based instructions.
 
 ![Agent Configurator tab](/img/manual/pf-agent-configurator.png)
 
@@ -119,6 +119,47 @@ Each agent is a specialist that handles a specific type of task:
 3. Choose a **task** (center panel)
 4. Edit the prompt in the **Prompt Editor** (right panel)
 5. Click **Save** — changes take effect immediately
+
+---
+
+### Skills
+
+Skills are reusable, file-based instructions that give agents specialized guidance for a repeatable job. Each skill is stored in a `SKILL.md` file and can include supporting resources in the same skill folder.
+
+![Skills workspace](/img/manual/skills-overview.png)
+
+#### Open and Edit a Skill
+
+1. Go to **Prompt Flow** → **Agent Configurator** → **Skills**.
+2. In the **Skills** panel, select the skill folder and then the `SKILL.md` file or supporting resource you want to view.
+3. Update the Markdown instructions in the editor. The toolbar provides common Markdown formatting, templates, undo/redo, and fullscreen editing.
+4. Click **Save** to create a new saved version of your changes.
+
+Use the skill instructions to define the role, approach, examples, expected output, and any checklist the agent should follow. Keep instructions specific to the skill so they remain reusable across relevant agent tasks.
+
+#### Manage Skill Availability and History
+
+| Control | What It Does |
+|---|---|
+| **Enable / Disable** | Turn an individual skill on or off without deleting its files. Disabled skills are shown with a strikethrough in the Skills panel. |
+| **History** | Open the version history for the selected skill file. You can view a previous version's diff and restore an earlier version when needed. |
+| **Copy** | Copy the current skill instructions for reuse outside the editor. |
+| **Activity** | Open the Skills activity log to review changes. |
+
+#### Administrator Controls
+
+Administrators manage the seed Skills workspace used to provision skills for subscriptions. Seed-skill edits do not change existing workspaces until they are synced.
+
+| Control | What It Does |
+|---|---|
+| **Export / Import** | Export or import the seed Skills archive. |
+| **Apply to new workspaces** | Save the current seed Skills for future workspaces. |
+| **Apply + Sync to all workspaces** | Save the seed Skills and synchronize them to all workspaces. User-created files and folders are preserved during synchronization. |
+| **Sync Status** | Review sync progress, failed workspaces, and retry or cancel an active sync. |
+
+:::tip Skill-writing guidance
+Describe when the skill should be used, what inputs it expects, the steps it should take, and the output it must return. Include concise examples when the task has important business rules or edge cases.
+:::
 
 ---
 

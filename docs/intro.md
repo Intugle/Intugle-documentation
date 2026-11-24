@@ -70,6 +70,7 @@ Before diving in, here are the core concepts you will encounter throughout Intug
 | [Page 4 — Sessions](./sessions) | Viewing and resuming past conversations |
 | [Page 5 — Prompt Flow & Agents](./prompt-flow) | Agent Configurator, Few-Shots, Analytics Catalog, Metadata, Semantic Data Graph |
 | [Page 6 — Profile & Settings](./profile) | Managing your account and workspaces |
+| [Activity (Beta)](./advanced/context-history) | Reviewing context and configuration changes across a workspace |
 
 ---
 

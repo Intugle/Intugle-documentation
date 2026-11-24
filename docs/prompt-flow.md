@@ -59,7 +59,7 @@ When you ask Intugle a question, here's what happens behind the scenes:
 
 ## Page Layout
 
-The page has **eight tabs** in the left navigation panel:
+The page has **nine tabs** in the left navigation panel:
 
 | Tab | Purpose |
 |---|---|
@@ -71,6 +71,7 @@ The page has **eight tabs** in the left navigation panel:
 | **Memory** | Configure Universal Instructions that apply globally |
 | **Jobs** | (Coming Soon) Manage scheduled jobs |
 | **Observability** | Monitor and analyze AI agent interactions |
+| **Activity (Beta)** | Review a workspace-wide timeline of tracked context and configuration changes |
 
 ### Global Controls (Top-Right)
 
@@ -426,6 +427,14 @@ You can filter the data by multiple criteria:
 
 ---
 
+## Tab 9 — Activity (Beta)
+
+The **Activity (Beta)** tab provides a read-only, workspace-wide timeline of meaningful changes to AI context, workspace configuration, data setup, and deployments. Use it to see what changed, who changed it, and when—making it easier to troubleshoot unexpected AI behavior and review deployment or data-scope updates.
+
+For full details on supported categories, filters, diffs, CSV exports, and visibility rules, see [Activity (Beta)](./advanced/context-history).
+
+---
+
 ## How It All Works Together
 
 Here's a complete example of how Prompt Flow components work together:
@@ -488,3 +497,6 @@ Here's a complete example of how Prompt Flow components work together:
 - Monitor execution times to catch performance issues
 - Use filters to focus on specific apps or user groups
 - Export data periodically for trend analysis
+
+### For Activity (Beta)
+- Review Activity after important updates to prompts, metadata, data scope, integrations, or deployments to confirm what changed

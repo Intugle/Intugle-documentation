@@ -1,0 +1,191 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 2.15.0 Release Notes
+
+**Release type:** minor
+
+<Tabs>
+  <TabItem value="release-notes" label="Release Notes" default>
+
+## What's new
+
+Covers: API 3.28.12 · UI 3.28.13 · Agent v2 4.29.11 · Jobhandler Async 4.28.4 · Scheduler 0.1.7 (everything after API 3.27.13 / UI 3.27.11 / Agent v2 4.28.0 / Jobhandler 4.27.7 / Scheduler 0.1.5). AI Services has no new release.
+
+### 🎙️ Voice input in chat
+
+Users can speak their questions instead of typing them. A mic button streams speech to text live in chat, on the home page chat, and in deployed ChatApps.
+
+* Where: Mic icon in the chat box. Admins choose the voice model in the voice model settings.
+* Docs: [Speech-to-text](../advanced/speech-to-text.md)
+
+### 🧩 Multiple ChatApps per workspace
+
+A workspace can now hold several ChatApps, each tracked separately across its versions. You can soft-delete ChatApps you no longer need. Memory, observability and analytics work per ChatApp, and export/import lets you pick which version to move.
+
+* Where: Deploy wizard, ChatApp list, Export/Import
+* Docs: [Import / Export](../advanced/import-export.md)
+
+### 🕸️ Context Graph explorer
+
+A visual canvas for exploring the context graph. Nodes show icons that match their catalog type, so the graph is easier to scan.
+
+* Where: Right panel in Chat sessions in Developer Workspace
+
+### 🕓 Context history & agent scope
+
+One history of every change to an agent's context: instructions, memories, skills, deployment schedules, pipeline runs and scope changes. Users can see what changed and when. History and agent scope now share one view.
+
+* Where: Context management screen
+* Docs: [Context history](../advanced/context-history.md)
+
+### 📊 Observability dashboards & drill-down
+
+New observability and analytics dashboards that can be filtered by ChatApp. Clicking a point on a chart opens the questions and queries behind it. Cost notifications are also per ChatApp.
+
+* Where: Observability / Analytics
+
+### 💰 Cached query badge
+
+Queries answered from cache now show a Cached badge and count as zero cost.
+
+* Where: Query cost views
+
+### 📎 Session artifacts & downloads
+
+Files and SQL results produced in a chat session are saved as artifacts. Users can list them and download them later.
+
+* Where: Session Artifacts panel
+
+### 🔐 Access control: groups, table & document scopes
+
+New IAM with access groups and clearer policy validation messages. Agents now respect table- and document-level access, so users only get answers from data they're allowed to see.
+
+* Where: Access Control (group details tabs)
+* Docs: [Authorization](../advanced/authorization.md)
+
+### 👤 Account & workspace ownership
+
+Users can delete their own account. Admins can remove users and transfer workspace ownership to someone else. There's also a new workspace profile settings page.
+
+* Where: Account settings, Workspace settings → Profile
+* Docs: [Profile & Settings](../profile.md)
+
+### 🧾 Show the SQL behind an answer
+
+A new response setting that shows the SQL query used to produce an answer.
+
+* Where: Response configuration → query use toggle
+
+### 🛠️ Skills: version restore & faster loading
+
+You can restore an earlier version of a skill from its history. Workspace skills load on demand, so they open faster.
+
+* Where: Skills → History panel
+
+### 🧭 Classifier task & prompt flow
+
+Adds a classifier task, a prompt flow with a flow-chart view, and safer classifier model updates.
+
+* Docs: [Prompt flow](../prompt-flow.md)
+
+### 📢 Announcement banner
+
+Admins can show a configurable announcement banner to users, in several banner types.
+
+### 🗂️ File store per ChatApp
+
+Each ChatApp now has its own file store, and a Document ID column makes documents easier to reference.
+
+### ✅ Confidence evaluation on by default
+
+The Confidence evaluation task is now on by default for new setups.
+
+### 🤖 Developer MCP: per-agent settings
+
+Each agent can have its own runtime configuration in the developer MCP.
+
+* Docs: [MCP overview](../advanced/mcp/overview.md)
+
+### Behind the scenes
+
+Logging moved to SigNoz/OpenTelemetry, Langfuse v4 upgrade, ChatApp registry key migration, Qdrant health-check and status routes, configurable embedding model for node search, scheduler secret config, security and dependency updates, plus 51 bug fixes.
+
+### AI Services
+
+No changes in this release.
+
+
+</TabItem>
+  <TabItem value="developer-release-notes" label="Developer Release Notes">
+
+### Microservice versions
+
+| Service | Image tag | Git tag | Git commit | Repository |
+|---|---|---|---|---|
+| API | `3.28.12` | `3.28.12` | `c81882a0` | `api` |
+| UI | `3.28.13` | `3.28.13` | `07ca20c9` | `ui-intugle/ui` |
+| Agent v2 (chatai_mcp) | `4.29.11` | `4.29.11` | `73317564` | `chatai_mcp` |
+| Jobhandler Async | `4.28.4` | `4.28.4` | `e23faf51` | `jobhandler-async` |
+| AI Services | `1.3.0` | `1.3.0` | `ab8fce7f` | `ai-services` |
+| Scheduler | `0.1.7` | `0.1.7` | `4bce03d3` | `scheduler` |
+
+### Summary of changes
+
+#### API
+
+- Voice input endpoints, context graph node icons and embedding-model resolution.
+- Context history tracking for agent scope, deployment schedules, instructions, memories and skills.
+- Multi-ChatApp registry, soft-delete, per-ChatApp filters, and FK migration.
+- IAM access groups, group slug management and policy validation.
+- Session artifacts, query-cost cached replay, observability drill-down.
+- Per-agent runtime configs in developer MCP, prompt admin access control.
+- SigNoz logging, Qdrant health-checks, Langfuse v4, security hardening and dependency updates.
+
+#### UI
+
+- Streaming mic input, voice model configurator, home-page chat voice input.
+- Multi-ChatApp deploy wizard, ChatApp list, per-ChatApp observability and analytics.
+- Context Graph explorer canvas with type icons, context history UI.
+- Session Artifacts panel, Cached query badge, chart-mark drill-down.
+- Access Control group details, workspace profile and account ownership pages.
+- Query-use toggle, skill version restore, lazy workspace skills, announcement banner.
+- New theme, theming and accessibility improvements, security fixes.
+
+#### Agent v2
+
+- Multi-ChatApp protocol routing, registry-aware sibling resolution, per-ChatApp cost notifications.
+- Context history ingestion for agent mutations, Mem0 memory tracking.
+- IAM table/document scope enforcement and group validation for MCP/A2A.
+- Session artifacts, OTLP/SigNoz logging, Langfuse v4, CVE fixes.
+- Agent admission queue, configurable timeouts, FastAPI endpoint integration.
+
+#### Jobhandler Async
+
+- Multi-ChatApp export/import v1.6.0, IAM integration, SQL-result artifacts.
+- Context history worker finalization, configurable node-search embedding model.
+- SigNoz logging, Langfuse v4, appcore 0.8.3 bump, CVE hardening.
+
+#### AI Services
+
+- No changes in this release.
+
+#### Scheduler
+
+- mem0 memory sync scheduling, CA bundle propagation, MCP_REQUEST_STATE_SECRET support.
+
+### Breaking changes
+
+- None reported.
+
+
+</TabItem>
+</Tabs>
+
+---
+
+[Back to release notes index](index.md)

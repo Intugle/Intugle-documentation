@@ -10,6 +10,7 @@ This section documents Intugle application releases and the microservice version
 
 | Version | API | UI | Agent v2 | Jobhandler Async | AI Services | Scheduler |
 |---|---|---|---|---|---|---|
+| [2.15.0](2.15.0.mdx) | 3.28.12 | 3.28.13 | 4.29.11 | 4.28.4 | 1.3.0 | 0.1.7 |
 | [2.14.0](2.14.0.mdx) | 3.27.13 | 3.27.11 | 4.28.0 | 4.27.7 | 1.3.0 | 0.1.5 |
 | [2.13.0](2.13.0.mdx) | 3.27.12 | 3.27.10 | 4.27.2 | 4.27.6 | 1.3.0 | 0.1.5 |
 | [2.12.0](2.12.0.mdx) | 3.27.11 | 3.27.9 | 4.27.1 | 4.27.6 | 1.3.0 | 0.1.5 |
@@ -24,6 +25,7 @@ This section documents Intugle application releases and the microservice version
 
 ## Release Pages
 
+- [2.15.0](2.15.0.mdx)
 - [2.14.0 — 2026-10-06](2.14.0.mdx)
 - [2.13.0 — 2026-09-25](2.13.0.mdx)
 - [2.12.0 — 2026-09-25](2.12.0.mdx)

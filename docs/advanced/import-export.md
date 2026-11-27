@@ -22,7 +22,7 @@ To export an existing workspace:
 2. Click the **Three-dots Menu** next to the workspace you want to export.
    ![Three-dots Menu](./export/2_three-dots-menu.png)
 3. Select **Export** and wait for the workspace data to be packaged.
-   ![Export Workspace](./export/3_click+export-.png)
+   ![Exporting workspace data dialog](./export/export-workspace-dialog.png)
 
 ## What is Included in the Export?
 When you export a workspace, the system captures the following core components:
@@ -77,8 +77,8 @@ To import a workspace:
 After your workspace is imported, complete these configuration tasks:
 
 1. **Update API Keys:** The new ChatApp deployment will require a fresh API key. You will need to update your integrations to use this newly generated key.
-2. **Background Jobs:** Background jobs for autocorrection and row-shortlisting will be automatically triggered after import. You will see these appear as active jobs in your workspace on the Deploy ChatApp and [Prompt-Flow](../prompt-flow.md) Jobs page. For more details, see [Caveats: Deploying a ChatApp After Workspace Import](#caveats-deploying-a-chatapp-after-workspace-import).
-   ![Active Jobs](./import/3_background_jobs.png)
+2. **Background Jobs:** Post-import setup jobs for Fewshots, Analytics Catalogue, Cache Questions, Autocorrection, Row Shortlisting, and node vectorization are automatically triggered after import. The **Post-Import Setup Status** dialog shows their progress. You can also view detailed job information on the [Prompt-Flow](../prompt-flow.md) **Jobs** page under Run Logs. For more details, see [Caveats: Deploying a ChatApp After Workspace Import](#caveats-deploying-a-chatapp-after-workspace-import).
+   ![Post-Import Setup Status dialog](./import/after_import_vector_collection_setup/deploy-prechecks_dialog.png)
 3. **Update Compute Connection Details:** When promoting a workspace across environments (e.g., from staging to production) where the destination requires different source databases, you may need to manually edit the workspace's compute connection details to point to the correct production data source. See the [Edit Workspace Compute Connection Details](./edit-workspace-compute.md) guide for instructions.
 
 
@@ -87,11 +87,11 @@ Because Deployed ChatApps are excluded from the export bundle, you must trigger 
 
 ### 1. Launch the ChatApp Deployment
 - Click the **Deploy ChatApp Wizard** button to start the process.
-  ![Deploy ChatApp Wizard Button](./import/after_import_vector_collection_setup/deploy_chatapp_wizard_button.png)
-- You will see the **Deploy Prechecks** dialog box. This dialog shows the status of the post-import vector collection setup jobs — including Fewshot, Analytics-Catalogue, Auto-Correction, and Row-Shortlisting vector collection jobs. You can also view the detailed status of these jobs in the [Prompt-Flow](../prompt-flow.md) > **Jobs** page under run logs.
-  ![Deploy Prechecks Dialog](./import/after_import_vector_collection_setup/deploy-prechecks_dialog.png)
-- If a vector collection deployment fails, you can click the button to **retry** it. By default, the system allows only one vector collection job at a time, so you can retry only after all jobs have reached a terminal state (Completed or Error).
-  ![Retry After Failure](./import/after_import_vector_collection_setup/after_deploy_vector_collection_failed_then_retry.png)
+  ![ChatApp deployment page](./import/after_import_vector_collection_setup/deploy_chatapp_wizard_button.png)
+- The **Post-Import Setup Status** dialog shows the progress of the post-import vector collection setup jobs, including Fewshots, Analytics Catalogue, Cache Questions, Autocorrection, and Row Shortlisting.
+  ![Post-Import Setup Status dialog](./import/after_import_vector_collection_setup/deploy-prechecks_dialog.png)
+- Select the view-details icon for a collection to inspect its status. You can also view these jobs in the [Prompt-Flow](../prompt-flow.md) > **Jobs** page under run logs.
+  ![Fewshots vector collection detail dialog](./import/after_import_vector_collection_setup/after_deploy_vector_collection_failed_then_retry.png)
 
 ### 2. Vector Collection Setup & Monitoring
 After importing, the post-import vector collection setup is automatically triggered.
@@ -99,4 +99,3 @@ After importing, the post-import vector collection setup is automatically trigge
   ![Job Run Logs Page](./import/after_import_vector_collection_setup/job_run_logs_page_shows_post_import_vector_collection_setup_.png)
 - You can click to **view detailed status** for more information.
   ![View Detailed Status](./import/after_import_vector_collection_setup/view_detailed_status.png)
-

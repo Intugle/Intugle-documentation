@@ -8,7 +8,7 @@ sidebar_position: 7
 
 The **Profile & Settings** page is where you manage your personal account details, preferences, and security options.
 
-![Profile & Settings page](/img/manual/07_profile_full.png)
+![Profile & Settings page](/img/manual/07_profile_settings_light.png)
 
 ---
 
